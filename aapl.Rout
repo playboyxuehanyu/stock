@@ -18,5 +18,12 @@ R是个合作计划，有许多人为之做出了贡献.
 [原来保存的工作空间已还原]
 
 > library(ggplot2)
-Error in library(ggplot2) : 不存在叫‘ggplot2’这个名字的程辑包
+> 
+> require(devEMF)
+载入需要的程辑包：devEMF
+Warning message:
+In library(package, lib.loc = lib.loc, character.only = TRUE, logical.return = TRUE,  :
+  不存在叫‘devEMF’这个名字的程辑包
+> emf('aapl.emf')
+错误: 没有"emf"这个函数
 停止执行

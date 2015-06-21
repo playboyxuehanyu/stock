@@ -21,9 +21,11 @@ R是个合作计划，有许多人为之做出了贡献.
 > 
 > require(devEMF)
 载入需要的程辑包：devEMF
-Warning message:
-In library(package, lib.loc = lib.loc, character.only = TRUE, logical.return = TRUE,  :
-  不存在叫‘devEMF’这个名字的程辑包
 > emf('aapl.emf')
-错误: 没有"emf"这个函数
+> 
+> data <- read.csv("http://www.google.com/finance/historical?q=AAPL&startdate=Jan+1%2C+2000&enddate=Mar+1%2C+2013&output=csv ", sep=",", header=1)
+Error in file(file, "rt") : 无法打开链结
+Calls: read.csv -> read.table -> file
+此外: Warning message:
+In file(file, "rt") : 无法通过通訊埠80连接到'www.google.com'.
 停止执行
